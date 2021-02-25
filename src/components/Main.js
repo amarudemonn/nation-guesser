@@ -14,7 +14,7 @@ class Main extends React.Component {
   }
 
   nameHandler = (e) => {
-    this.setState({ name: e.target.value });
+    this.setState({ name: e.target.value.trim() });
   };
 
   onSubmitHandler = (e) => {
